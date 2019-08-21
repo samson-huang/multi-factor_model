@@ -1,1 +1,8 @@
+import fix_yahoo_finance as yf
+import yfinance as  yf
+yf.pdr_override()
 
+import pandas_datareader.data as web
+
+tickers = list(ticker_sector.keys())
+pan = web.get_data_yahoo(tickers, datetime.datetime(2017, 1, 1),  datetime.datetime(2017, 6, 1))
