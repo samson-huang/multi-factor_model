@@ -38,3 +38,13 @@ index-url = http://mirrors.aliyun.com/pypi/simple/
 [install]
 trusted-host=mirrors.aliyun.com
 
+3.ubuntu安装anaconda3
+要用清华镜像
+安装完成后
+
+若在终端输入 python，仍然会显示Ubuntu自带的python版本，我们执行：
+sudo gedit ~/.bashrc
+export PATH="/home/xupp/anaconda3/bin:$PATH"
+ 修改终端的默认 python 为 anaconda，至此全部完成
+
+
