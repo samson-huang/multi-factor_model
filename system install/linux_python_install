@@ -23,3 +23,14 @@ deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security universe
 sudo apt-get update
 sudo apt-get -f install
 sudo apt-get upgrade
+
+###################################
+#######################################
+2.换pip源
+
+linux: 
+修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：
+
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+
