@@ -29,8 +29,12 @@ sudo apt-get upgrade
 2.换pip源
 
 linux: 
-修改 ~/.pip/pip.conf (没有就创建一个)， 内容如下：
+sudo mkdir ~/.pip
+sudo gedit ~/.pip/pip.conf
 
 [global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+index-url = http://mirrors.aliyun.com/pypi/simple/
+ 
+[install]
+trusted-host=mirrors.aliyun.com
 
